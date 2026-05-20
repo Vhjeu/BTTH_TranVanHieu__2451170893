@@ -40,15 +40,19 @@
         //0.6
         let diem = 7.5;
         let diemChuyenCan = 9;
-        console.log(`${diem} >= 5 && ${diemChuyenCan} >= 8:`, );
+        // console.log(`${diem} >= 5 && ${diemChuyenCan} >= 8:`, diem >= 5 && diemChuyenCan >= 8 ? "Đạt" );
         //0.7
         let monan =["pho", "bun cha", "banh mi", "com"];
-        console.log("Món ăn yêu thích đầu :", pho);
-        console.log("Món ăn yêu thích cuối:", com);
+        console.log("Món ăn yêu thích đầu :", monan[0]);
+        console.log("Món ăn yêu thích cuối:", monan[monan.length - 1]);
         monan.unshift("bun bo hue");
         console.log("Danh sách món ăn sau khi thêm :", monan);
         monan.pop();
         console.log("Danh sách món ăn sau khi xóa:", monan);
+        monan.forEach((mon, index) => {
+            console.log(`Món ăn ${index + 1}: ${mon}`);
+        });
+        console.log(monan.includes("pho"));
     </script>
 </body>
 </html>
